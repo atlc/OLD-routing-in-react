@@ -1,9 +1,11 @@
 {
+  "homepage": "https://atlc.github.io/routing-in-react",
   "name": "routing-in-react",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "es6-promise": "^4.2.5",
+    "gh-pages": "^2.0.0",
     "isomorphic-fetch": "^2.2.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2",
@@ -11,6 +13,8 @@
     "react-scripts": "1.1.5"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
