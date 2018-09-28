@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import 'isomorphic-fetch';  // Using Chrome 69 but importing for best practices
-import 'es6-promise';      // Using Chrome 69 but importing for best practices
+import 'isomorphic-fetch';
+import 'es6-promise';
 import GhibliLogo from '../logo.png';
 
 
@@ -28,11 +28,14 @@ class Films extends Component {
                             <img className="card-img-top" src={GhibliLogo} alt="Ghibli Studios logo" />
                             <div className="card-body">
                                 <h2 className="card-title">{film.title}</h2>
+                                <hr />
                                 <h5>Directed by: {film.director}</h5>
                                 <h5>Produced by: {film.producer}</h5>
+                                <hr />
                                 <p className="card-text">{film.description}</p>
                                 <div className="card-footer">
-                                    <small className="text-muted">Released in {film.release_date} with a Rotten Tomatoes Rating of {film.rt_score}/100</small>
+                                    <p>Released in {film.release_date} with a Rotten Tomatoes Rating of {film.rt_score}/100</p>
+                                    <p>Movie ID: {film.id}</p>
                                     <a href={"http://www.google.com/search?q=" + film.title} className="btn btn-success">Check it out on Google.</a>
                                 </div>
                             </div>
