@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Link, Switch, Route } from 'react-router-dom';
 import Films from './Films';
 import FilmsID from './FilmsID';
 import People from './People';
+import PeopleID from './PeopleID';
 import Default from './Default';
 
 class App extends Component {
@@ -19,7 +20,7 @@ class App extends Component {
                         <Route exact path="/films" component={Films} />
                         <Route exact path="/films/:id" component={FilmsID} />
                         <Route exact path="/people" component={People} />
-                        <Route exact path="/people/:id" component={People} />
+                        <Route exact path="/people/:id" component={PeopleID} />
                     </Switch>
                 </Fragment>
             </Router>

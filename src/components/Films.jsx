@@ -36,7 +36,8 @@ class Films extends Component {
                                 <div className="card-footer">
                                     <p>Released in {film.release_date} with a Rotten Tomatoes Rating of {film.rt_score}/100</p>
                                     <p>Movie ID: {film.id}</p>
-                                    <a href={"http://www.google.com/search?q=" + film.title} className="btn btn-success">Check it out on Google.</a>
+                                    <a href={"/films/" + film.id} className="btn btn-success mb-2 mt-2">See only me!</a>
+                                    <a href={"http://www.google.com/search?q=" + film.title} target="_blank" className="btn btn-success mb-2 mt-2">Check it out on Google.</a>
                                 </div>
                             </div>
                         </div>
