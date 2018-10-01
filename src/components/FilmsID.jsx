@@ -32,9 +32,9 @@ class FilmsID extends Component {
                         <p className="text-muted">Released in {this.state.film.release_date} with a Rotten Tomatoes Rating of {this.state.film.rt_score}/100</p>
                         <p>Movie ID: {this.state.film.id}</p>
                         <hr />
-                        <a href={"http://www.google.com/search?q=" + this.state.film.title} target="_blank" className="btn btn-success">Check it out on Google.</a>
+                        <a href={"http://www.google.com/search?q=" + this.state.film.title} target="_blank" className="btn btn-dark">Check it out on Google.</a>
                         <hr />
-                        <a href={this.state.film.url} target="_blank" className="btn btn-success">My JSON on the Ghibli API</a>
+                        <a href={this.state.film.url} target="_blank" className="btn btn-dark">My JSON on the Ghibli API</a>
                     </div>
                 </div>
             </div>

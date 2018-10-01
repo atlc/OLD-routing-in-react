@@ -12,9 +12,9 @@ class App extends Component {
         return (
             <Router>
                 <Fragment>
-                    <Link to="/"><button className="btn btn-success ml-2 mr-2 mb-3 mt-3">Home</button></Link>
-                    <Link to="/films"><button className="btn btn-success ml-2 mr-2 mb-3 mt-3">Films</button></Link>
-                    <Link to="/people"><button className="btn btn-success ml-2 mr-2 mb-3 mt-3">People</button></Link>
+                    <Link to="/"><button className="btn btn-dark ml-2 mr-2 mb-3 mt-3">Home</button></Link>
+                    <Link to="/films"><button className="btn btn-dark ml-2 mr-2 mb-3 mt-3">Films</button></Link>
+                    <Link to="/people"><button className="btn btn-dark ml-2 mr-2 mb-3 mt-3">People</button></Link>
                     <Switch>
                         <Route exact path="/" component={Default} />
                         <Route exact path="/films" component={Films} />

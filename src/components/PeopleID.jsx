@@ -32,7 +32,7 @@ class PeopleID extends Component {
                     <p><strong>Eye color:</strong> <em>{this.state.person.eye_color}</em></p>
                     <div className="card-footer">
                         <p>My ID: {this.state.person.id}</p>
-                        <a href={this.state.person.url} target="_blank" className="btn btn-success">See my full JSON from the Ghibli API here:</a>
+                        <a href={this.state.person.url} target="_blank" className="btn btn-dark">See my full JSON from the Ghibli API here:</a>
                     </div>
                 </div>
             </div>

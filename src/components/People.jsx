@@ -35,8 +35,8 @@ class People extends Component {
                                 <p><strong>Eye color:</strong> <em>{person.eye_color}</em></p>
                                 <div className="card-footer">
                                     <p>My ID: {person.id}</p>
-                                    <a href={"/people/" + person.id} className="btn btn-success mb-2 mt-2">See just me:</a>
-                                    <a href={person.url} target="_blank" className="btn btn-success mb-2 mt-2">See my full JSON here:</a>
+                                    <a href={"/people/" + person.id} className="btn btn-dark mb-2 mt-2">See just me:</a>
+                                    <a href={person.url} target="_blank" className="btn btn-dark mb-2 mt-2">See my full JSON here:</a>
                                 </div>
                             </div>
                         </div>
