@@ -8,6 +8,8 @@ import PeopleID from './PeopleID';
 import Locations from './Locations';
 import LocationsID from './LocationsID';
 import Vehicles from './Vehicles';
+import VehiclesID from './VehiclesID';
+
 
 class App extends Component {
 
@@ -29,6 +31,7 @@ class App extends Component {
                         <Route exact path="/locations" component={Locations} />
                         <Route exact path="/locations/:id" component={LocationsID} />
                         <Route exact path="/vehicles" component={Vehicles} />
+                        <Route exact path="/vehicles/:id" component={VehiclesID} />
                     </Switch>
                 </Fragment>
             </Router>
