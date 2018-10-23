@@ -22,6 +22,7 @@ class App extends Component {
                     <Link to="/people"><button className="btn btn-dark ml-2 mr-2 mb-3 mt-3">People</button></Link>
                     <Link to="/locations"><button className="btn btn-dark ml-2 mr-2 mb-3 mt-3">Locations</button></Link>
                     <Link to="/vehicles"><button className="btn btn-dark ml-2 mr-2 mb-3 mt-3">Vehicles</button></Link>
+                    <a href="https://github.com/atlc/routing-in-react" target="_blank" className="btn btn-dark ml-2 mr-2 mb-3 mt-3">GitHub Repo</a>
                     <Switch>
                         <Route exact path="/" component={Default} />
                         <Route exact path="/films" component={Films} />
